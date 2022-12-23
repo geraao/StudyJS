@@ -265,7 +265,7 @@ lines-1-result.length
 "Просмотрено довольно мало фильмов", если от 10 до 30 - "Вы классический зритель", а если больше - 
 "Вы киноман". А если не подошло ни к одному варианту - "Произошла ошибка"
 
-4) Потренироваться и переписать цикл еще двумя способами*/
+4) Потренироваться и переписать цикл еще двумя способами
 
 // Код возьмите из предыдущего домашнего задания
 
@@ -302,4 +302,106 @@ if (personalMovieDB.count < 10) {
     console.log("Произошла ошибка");
 }
 
-console.log(personalMovieDB); 
+console.log(personalMovieDB);
+
+*/
+
+/*
+let num = 20;
+function showFirstMessage(text) {
+    console.log(text);
+    let num = 10;
+    console.log(num);
+}
+
+showFirstMessage("Hello world!");
+console.log(num);
+
+// function calc(a, b) {
+//     return (a + b);
+// }
+
+// console.log(calc(4, 3));
+// console.log(calc(5, 6));
+// console.log(calc(7, 8));
+
+function ret() {
+    let num = 50;
+    return num;
+}
+
+const aNum = ret();
+console.log(aNum);
+
+const logger = function() {
+    console.log("Hello!")
+};
+
+logger();
+
+const calc = (a, b) => {
+    console.log('1');
+    return a + b;
+};
+*/
+
+/*
+const   usdCurr = 28;
+const   discount = 0.9;
+
+function convert(amount, curr) {
+    return curr * amount;
+}
+
+function promotion(result) {
+    console.log(result * discount);
+}
+
+const res = convert(500, usdCurr)
+promotion(res);
+
+function test() {
+    for (let i = 0; i < 5; i++) {
+        console.log(i);
+        if (i === 3) return
+    }
+    console.log('Done');
+}
+
+test();
+
+function doNothing() {};
+console.log(doNothing() === undefined);
+*/
+
+/*
+// Место для первой задачи
+function sayHello(name) {
+    return `Привет, ${name}!`;
+}
+
+// Место для второй задачи
+function returnNeighboringNumbers(num) {
+    let arr = [num - 1, num, num + 1];
+    return(arr);
+}
+
+// Место для третьей задачи
+function getMathResult(num, ber) {
+    if (typeof(ber) !== 'number'|| ber <= 0) {
+        return num;
+    }
+
+    let str = '';
+
+    for (let i = 1; i <= ber; i++) {
+        if (i === ber) {
+            str += `${num * i}`;
+        } else {
+            str += `${num * i}---`;
+        }
+    }
+    return(str);
+};
+*/
+
