@@ -723,8 +723,14 @@ console.log(Object.keys(options).length);
 
 */
 
+/*
+const arr = [2, 32, 26, 18, 10];
+arr.sort(compareNum);
+console.log(arr);
 
-const arr = [2, 3, 6, 8, 10];
+function compareNum(a, b) {
+    return a - b;
+}
 
 // arr[99] = 0;
 // console.log(arr.length);
@@ -751,3 +757,5 @@ const str = prompt("", "");
 const products = str.split(", ");
 products.sort();
 console.log(products.join('; '));
+*/
+
