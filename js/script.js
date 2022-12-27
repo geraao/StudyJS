@@ -1283,7 +1283,7 @@ sortStudentsByGroups(students)  =>
 То есть, меняется содержимое строки. Все оставшиеся ученики попадают туда.
 
 Задача интересная, немного заковыристая, но все необходимое для неё мы уже проходили. Просто распишите логику действий строка за строкой.
-*/
+
 
 const students = ['Peter', 'Andrew', 'Ann', 'Mark', 'Josh', 'Sandra', 'Cris', 'Bernard', 'Takesi', 'Sam'];
 
@@ -1306,3 +1306,130 @@ function sortStudentsByGroups(arr) {
 }
 
 sortStudentsByGroups(students);
+*/
+
+/*
+function hello() {
+    console.log("Hello World");
+    debugger;
+}
+
+hello();
+
+function hi() {
+    console.log('Say hi!');
+}
+
+hi();
+
+const   arr = [1, 14, 4, 30, 54],
+        sorted = arr.sort(compareNum);
+
+function compareNum(a, b) {
+    return a - b;
+}
+
+console.log(sorted);
+*/
+
+/*
+// To String
+// 1)
+console.log(typeof(String(null)));
+console.log(typeof(String(4)));
+
+// 2)
+console.log(typeof(5 + ''));
+
+const num = 5;
+
+console.log("https://vk.com/catalog/" + num);
+
+const fontSize = 26 + 'px';
+
+// To Number
+// 1)
+
+console.log(typeof(Number('4')));
+
+// 2)
+console.log(typeof(+'5'));
+
+// 3)
+console.log(typeof(parseInt("15px", 10)));
+
+let answ = +prompt("Hello", "");
+
+// To Boolean
+
+// 0, '', null, undefined, NaN;
+// 1)
+let switcher = null;
+
+if (switcher) {
+    console.log('Working...');
+}
+
+switcher = 1;
+
+if (switcher) {
+    console.log('Working...');
+}
+
+// 2)
+console.log(typeof(Boolean('4')));
+
+// 3)
+console.log(typeof(!!"4444"));
+
+
+// let number = 5; debugger
+
+// function logNumber() {
+//     console.log(number); debugger
+// }
+
+// number = 6;
+
+// logNumber(); debugger
+
+// number = 8;
+
+// logNumber(); debugger
+*/
+
+/*
+function createCounter() {
+    let counter = 0;
+
+    const myFunction = function () { debugger
+        counter = counter + 1; debugger
+        return counter; debugger
+    };
+
+    return myFunction;
+}
+debugger
+const increment = createCounter(); debugger
+const c1 = increment(); debugger
+const c2 = increment(); debugger
+const c3 = increment(); debugger
+
+console.log(c1, c2, c3);
+
+const result = getSum(5, 6);
+const getSum = function(a, b) {
+    return a + b;
+};
+console.log(typeof(NaN));
+
+function foo(a,b) {
+    const [first] = a;
+    const {eng} = b;
+ 
+    return `${first} ${eng}`;
+}
+ 
+const result = foo(['Hello', 'Привет'], {ru: 'Мир', eng: 'World'})
+console.log(result);
+*/
