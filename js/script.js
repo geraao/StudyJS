@@ -800,10 +800,10 @@ const numbers = {
     }
 };
 
-const newNumbers = copy(numbers);
+//const newNumbers = copy(numbers);
 
-newNumbers.a = 10;
-newNumbers.c.x = 10;
+//newNumbers.a = 10;
+//newNumbers.c.x = 10;
 
 // console.log(numbers);
 // console.log(newNumbers);
@@ -814,11 +814,11 @@ const add = {
 };
 
 const clone = Object.assign({}, add);
-// console.log(Object.assign(numbers, add));
+console.log(Object.assign(numbers, add));
 clone.d = 20;
 
-// console.log(add);
-// console.log(clone);
+console.log(add);
+console.log(clone);
 
 const oldArray = ['a', 'b', 'c'];
 const newArray = oldArray.slice();
@@ -1433,3 +1433,98 @@ function foo(a,b) {
 const result = foo(['Hello', 'Привет'], {ru: 'Мир', eng: 'World'})
 console.log(result);
 */
+
+/*
+// Какое будет выведено значение: 
+let x = 5; alert( x++ ); ? // Ответ: 5
+
+// Чему равно такое выражение: 
+[ ] + false - null + true ? // Ответ: NaN
+
+// Что выведет этот код: 
+let y = 1; let x = y = 2; alert(x); ? // Ответ: 2
+
+// Чему равна сумма 
+[ ] + 1 + 2? // Ответ: 12 (пустой массив - как строка)
+
+// Что выведет этот код: 
+alert( "1"[0] )? // Ответ: 1 (Первый элемент строки "1" и есть "1")
+
+// Чему равно 
+2 && 1 && null && 0 && undefined ? //Ответ: null ("И" запинается на лжи)
+
+// Есть ли разница между выражениями? 
+!!( a && b ) и (a && b) // Разница есть. Оператор "!!" превращает любой тип данных в булиновый тип, а операция (a && b) возвращает "b"
+
+// Что выведет этот код: 
+alert( null || 2 && 3 || 4 ); // Ответ: 3. Потомучто сначала выполняется &&, а потом null (false) сравнивается c 3 (true). А ИЛИ запинается об правду 
+
+// Правда ли что a == b ?
+a = [1, 2, 3]; b = [1, 2, 3]; // Нет. Элементы массива равны, а сами массивы по своей сути разные
+
+// Что выведет этот код?: 
+alert( +"Infinity" ); // Этот код выведет "Infinity" с типом данных "Number"
+
+// Верно ли сравнение: 
+"Ёжик" > "яблоко"? // Нет. В ответе будет false. (см. таблицу unicode)
+
+// Чему равно
+0 || "" || 2 || undefined || true || falsе // Ответ: 2
+*/
+
+/*
+const restorantData = {
+    menu: [
+        {
+            name: 'Salad Caesar',
+            price: '14$'
+        },
+        {
+            name: 'Pizza Diavola',
+            price: '9$'
+        },
+        {
+            name: 'Beefsteak',
+            price: '17$'
+        },
+        {
+            name: 'Napoleon',
+            price: '7$'
+        }
+    ],
+    waitors: [
+        {name: 'Alice', age: 22}, {name: 'John', age: 24}
+    ],
+    averageLunchPrice: '20$',
+    openNow: true
+};
+
+function isOpen(prop) {
+    let answer = '';
+    prop ? answer = 'Открыто' : answer = 'Закрыто';
+
+    return answer;
+}
+
+console.log(isOpen(restorantData.openNow));
+
+function isAverageLunchPriceTrue(fDish, sDish, average) {
+    if (+fDish.price.slice(0, -1) + (+sDish.price.slice(0, -1)) < +average.slice(0,-1)) {
+        return 'Цена ниже средней';
+    } else {
+        return 'Цена выше средней';
+    }
+}
+
+console.log(isAverageLunchPriceTrue(restorantData.menu[0], restorantData.menu[1], restorantData.averageLunchPrice));
+
+function transferWaitors(data) {
+    const copy = Object.assign({}, data);
+
+    copy.waitors = [{name: 'Mike', age: 32}];
+    return copy;
+}
+
+transferWaitors(restorantData);
+*/
+
